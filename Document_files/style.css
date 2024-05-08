@@ -1,0 +1,146 @@
+body{
+    background-color:rgb(176, 198, 218)
+;
+}
+
+#banner {
+    height: 90vh;
+}
+:root{
+
+    --bg1:#2d2A2B;
+    --bg2:rgb(44,42,42);
+    --body:rgb(95,86,86);
+    --brand:#18e4c2;
+    --white: rgb(116, 110, 110);
+    --p:rgb(161,150,150);
+
+}
+.navbar {
+    height: 10vh;
+
+}
+.navbar #navbar .nav-link.active{
+color:var(--brand)!important;
+}
+.navbar .nav-link:hover {
+    color:var(--brand)!important;
+}
+.banner{
+    height: 90vh;
+    background: url('https://th.bing.com/th/id/OIP.HLuY60jzx5puuKjbqmWRRwHaEK?w=310&h=180&c=7&r=0&o=5&cb=11&pid=1.7');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Buttom*/
+.btn{
+    padding:15px 30px;
+    transition:all 0.4s ease;
+    font-weight:800;
+    border-radius:0;
+}.btn{
+    padding:15px 30px;
+    transition:all o.4s ease;
+    font-weight:800;
+    border-radius:0;
+}
+.btn-brand {
+    background-color: var(--brand);
+
+}
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+
+}
+
+/*About*/
+#about {
+    background-color: var(--bg1);
+    position: relative;
+    z-index: 1;
+
+}
+
+#about::after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6 {
+    color: var(--brand);
+    z-index: 1;
+    font-weight: 600;
+}
+
+#about h2 {
+    font-weight: 800;
+    margin-top: 15px;
+    background-color: var(--bg1);
+}
+
+
+#services {
+    background-color: var(--white);
+}
+
+.icon-box-img {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.card:hover {
+    background-color: var(--bg1);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #ffffff;
+}
+
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax effect */
+    background-attachment: fixed;
+    /* parallax effect / to remove to effect  set to normal*/
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 42, 0.315)), url(../images/hero\ section-0630.jpg);
+    min-height: 70vh;
+}
+#reviews {
+    background-color:var(--brand);
+}
+
+.testimomnials{
+    background-color: #18e4c2;
+    padding: 30px;
+}
